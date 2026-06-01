@@ -1495,6 +1495,28 @@ small {
     font-weight: 300;
 }
 
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 0;
+    opacity: 0;
+    padding: 0;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.search-input.active {
+    width: 180px;
+    opacity: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
 /* MEDIA QUARI SECTION */
 
 @media screen and (max-width:700px) {

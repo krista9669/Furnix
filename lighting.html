@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furnix - Interior Trends</title>
+    <title>Furnix - Lighting</title>
+
+    <!-- CSS LINK -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    
 </head>
+
 <body>
+    <!-- HEADER PART -->
             <header>
         <nav class="navbar flex between wrapper">
             <a href="index.html" class="logo">Furnix.</a>
@@ -59,61 +67,56 @@
         </nav>
     </header>
 
+    <!-- MAIN CONTENT PART -->
     <main>
         <section class="wrapper p-block">
-            <div class="page-header-container">
-                <h2 class="h2-heading gradient-txt mt-3">Interior <span>Trends</span></h2>
-                <p class="detail-info-platform page-header-desc">
-                    Discover what's defining modern spaces this year. From earthy textures to bold architectural shapes, find inspiration for your next room refresh.
-                </p>
+            <div style="text-align: center; margin-bottom: 20px;">
+            <h2 class="h2-heading gradient-txt mt-3">Modern <span>Lighting</span></h2>
+            <p class="detail-info-platform" style="max-width: 600px; margin: 15px auto 0;">
+                Illuminate your home with elegant lighting solutions designed to blend style and functionality.
+            </p>
             </div>
 
-            <!-- Trend 1 -->
-            <div class="flex g-one-half trend-section">
-                <div class="trend-image-container">
-                    <!-- Reusing existing image as placeholder -->
-                    <img src="images/sofa.png" alt="Earthy Tones">
-                </div>
-                <div class="trend-text">
-                    <h3 class="trend-title">Earthy & Organic Tones</h3>
-                    <p class="detail-info-platform">
-                        Say goodbye to stark whites and cold grays. This year is all about bringing the outdoors inside with warm terracotta, deep olive greens, and natural sand hues. These colors create a calming sanctuary that promotes relaxation and wellness.
-                    </p>
-                    <a href="collections.html" class="btn mt-3 btn-inline">Shop The Look</a>
-                </div>
-            </div>
+            <!-- Products Grid -->
+            <div class="products-grid">
 
-            <!-- Trend 2 (Reversed layout) -->
-            <div class="flex g-one-half trend-section trend-reverse">
-                <div class="trend-image-container">
-                    <img src="images/bed.png" alt="Curved Furniture">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/hanging lamp.png" alt="Aura Pendent Lamp">
+                        <a href="#" class="favorite-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>   
+                        <a href="#" class="btn brown-bg">Add to cart</a>
+                    </div>
+                    <div>
+                        <small>Lighting</small>
+                        <h6>Aura Pendant Lamp</h6>
+                        <p class="price">$30.00</p>
+                    </div>
                 </div>
-                <div class="trend-text">
-                    <h3 class="trend-title">Curved & Sculptural Forms</h3>
-                    <p class="detail-info-platform">
-                        Rigid lines are making way for soft, sweeping curves. From rounded sofas to oval dining tables, furniture is becoming more sculptural. This trend softens the overall look of a room and creates a more inviting, conversational flow.
-                    </p>
-                    <a href="collections.html" class="btn mt-3 btn-inline">Shop The Look</a>
-                </div>
-            </div>
 
-            <!-- Trend 3 -->
-            <div class="flex g-one-half trend-section">
-                <div class="trend-image-container">
-                    <img src="images/modern chair.png" alt="Sustainable Materials">
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/chandelier.png" alt="Aura Pendent Lamp">
+                        <a href="#" class="favorite-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>   
+                        <a href="#" class="btn brown-bg">Add to cart</a>
+                    </div>
+                    <div>
+                        <small>Lighting</small>
+                        <h6>Designer Chandelier</h6>
+                        <p class="price">$500.00</p>
+                    </div>
                 </div>
-                <div class="trend-text">
-                    <h3 class="trend-title">Sustainable Craftsmanship</h3>
-                    <p class="detail-info-platform">
-                        Conscious consumerism is no longer just a trend, it's a standard. We are seeing a massive shift towards recycled fabrics, reclaimed woods, and hyper-durable materials designed to last generations rather than just seasons.
-                    </p>
-                    <a href="collections.html" class="btn mt-3 btn-inline">Shop The Look</a>
-                </div>
-            </div>
 
+            </div>        
         </section>
     </main>
 
+    <!-- FOOTER PART -->
             <footer id="contact" class="footer-image">
         <div class="wrapper p-block flex g-one-half">
             <div class="footer-wrapper">
@@ -165,6 +168,7 @@
             <p>&copy; 2025 copyright furnix homes. powered by <span><i>janavi pandole</i></span></p>
         </div>
     </footer>
+
     <script src="app.js"></script>
 </body>
 </html>

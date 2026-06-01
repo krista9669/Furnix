@@ -387,6 +387,20 @@ document.addEventListener('DOMContentLoaded', () => {
     renderWishlistPage();
 });
 
+const searchToggle = document.getElementById("searchToggle");
+const searchInput = document.getElementById("searchInput");
+
+if (searchToggle && searchInput) {
+    searchToggle.addEventListener("click", (e) => {
+        e.preventDefault();
+        searchInput.classList.toggle("active");
+
+        if (searchInput.classList.contains("active")) {
+            searchInput.focus();
+        }
+    });
+}
+
 function setupProductCards() {
     const productCards = document.querySelectorAll('.product-card');
     productCards.forEach((card, index) => {
@@ -447,5 +461,3 @@ function setupProductCards() {
         }
     });
 }
-
-
